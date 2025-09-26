@@ -542,7 +542,8 @@ class ZeroTierManager
         {
             RunCommand($"zerotier-cli deorbit {moon}");
         }
-        
+        RunCommand("sc stop ZeroTierOne");
+
     }
 
     static bool IsZeroTierInstalled()
